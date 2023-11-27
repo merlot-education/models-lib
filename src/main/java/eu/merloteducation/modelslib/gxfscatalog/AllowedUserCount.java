@@ -7,10 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AllowedUserCount {
+    @JsonProperty("@type")
+    private String type;
+
     @JsonProperty("merlot:userCountUpTo")
     private NumberTypeValue userCountUpTo;
-
-    @JsonProperty("merlot:userCountUnlimited")
-    private boolean userCountUnlimited;
-
 }

@@ -1,9 +1,7 @@
 package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.serviceoffering;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import eu.merloteducation.modelslib.gxfscatalog.*;
-import eu.merloteducation.modelslib.gxfscatalog.Runtime;
+import com.fasterxml.jackson.annotation.*;
+import eu.merloteducation.serviceofferingorchestrator.models.gxfscatalog.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -13,7 +11,14 @@ import java.util.Map;
 
 @Getter
 @Setter
-public class ServiceOfferingCredentialSubject {
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, visible = true)
+@JsonSubTypes({
+        @JsonSubTypes.Type(value = DataDeliveryCredentialSubject.class, name = "merlot:MerlotServiceOfferingDataDelivery"),
+        @JsonSubTypes.Type(value = SaaSCredentialSubject.class, name = "merlot:MerlotServiceOfferingSaaS"),
+        @JsonSubTypes.Type(value = CooperationCredentialSubject.class, name = "merlot:MerlotServiceOfferingCooperation")
+})
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public abstract class ServiceOfferingCredentialSubject {
 
     // general catalog fields
 
@@ -104,21 +109,12 @@ public class ServiceOfferingCredentialSubject {
     @JsonProperty("merlot:creationDate")
     private StringTypeValue creationDate;
 
-    @NotNull
-    @JsonProperty("merlot:dataAccessType")
-    private StringTypeValue dataAccessType;
-
-    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
-    @JsonProperty("merlot:attachments")
-    private List<StringTypeValue> attachments;
-
     @JsonProperty("merlot:exampleCosts")
     private StringTypeValue exampleCosts;
 
-    @NotNull
     @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
     @JsonProperty("merlot:runtimeOption")
-    private List<Runtime> runtimes;
+    private List<Runtime> runtimeOptions;
 
     @NotNull
     @JsonProperty("merlot:merlotTermsAndConditionsAccepted")

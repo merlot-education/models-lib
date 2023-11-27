@@ -19,4 +19,22 @@ public class TermsAndConditions {
 
     @JsonProperty("@type")
     private String type;
+
+    @Override
+    public boolean equals(Object other) {
+        if (other instanceof TermsAndConditions otherTermsAndConditions){
+            return content.getValue().equals((otherTermsAndConditions).getContent().getValue())
+                    && hash.getValue().equals((otherTermsAndConditions).getHash().getValue());
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + content.getValue().hashCode();
+        result = 31 * result + hash.getValue().hashCode();
+        return result;
+    }
+
 }

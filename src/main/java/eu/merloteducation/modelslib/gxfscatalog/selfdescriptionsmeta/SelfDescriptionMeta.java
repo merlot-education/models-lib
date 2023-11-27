@@ -1,7 +1,6 @@
 package eu.merloteducation.modelslib.gxfscatalog.selfdescriptionsmeta;
 
-import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescription;
-import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.serviceoffering.ServiceOfferingCredentialSubject;
+import eu.merloteducation.serviceofferingorchestrator.models.gxfscatalog.selfdescriptions.SelfDescription;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,9 +8,9 @@ import java.util.List;
 
 @Getter
 @Setter
-public class SelfDescriptionMeta<T extends ServiceOfferingCredentialSubject> {
+public class SelfDescriptionMeta {
     private String expirationTime;
-    private SelfDescription<T> content;
+    private SelfDescription content;
     private List<String> validators;
     private String subjectId;
     private String sdHash;

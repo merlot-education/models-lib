@@ -8,13 +8,13 @@ import lombok.Setter;
 @Setter
 public class Runtime {
 
+    @JsonProperty("@type")
+    private String type;
+
     @JsonProperty("merlot:runtimeCount")
     private NumberTypeValue runtimeCount;
 
     @JsonProperty("merlot:runtimeMeasurement")
     private StringTypeValue runtimeMeasurement;
-
-    @JsonProperty("merlot:runtimeUnlimited")
-    private boolean runtimeUnlimited;
 
 }
