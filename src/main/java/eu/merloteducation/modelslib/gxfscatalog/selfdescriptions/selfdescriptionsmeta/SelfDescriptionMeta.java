@@ -1,4 +1,4 @@
-package eu.merloteducation.modelslib.gxfscatalog.selfdescriptionsmeta;
+package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.selfdescriptionsmeta;
 
 import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescription;
 import lombok.Getter;

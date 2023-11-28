@@ -1,4 +1,4 @@
-package eu.merloteducation.modelslib.gxfscatalog.selfdescriptionsmeta;
+package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.selfdescriptionsmeta;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
