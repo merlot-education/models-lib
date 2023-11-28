@@ -12,13 +12,13 @@ public class VCard {
     private String type;
 
     @JsonProperty("vcard:country-name")
-    private eu.merloteducation.modelslib.gxfscatalog.organization.StringTypeValue countryName;
+    private StringTypeValue countryName;
 
     @JsonProperty("vcard:street-address")
-    private eu.merloteducation.modelslib.gxfscatalog.organization.StringTypeValue streetAddress;
+    private StringTypeValue streetAddress;
 
     @JsonProperty("vcard:locality")
-    private eu.merloteducation.modelslib.gxfscatalog.organization.StringTypeValue locality;
+    private StringTypeValue locality;
 
     @JsonProperty("vcard:postal-code")
     private StringTypeValue postalCode;

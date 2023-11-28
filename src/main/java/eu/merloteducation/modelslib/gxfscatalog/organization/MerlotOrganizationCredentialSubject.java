@@ -2,6 +2,8 @@ package eu.merloteducation.modelslib.gxfscatalog.organization;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.RegistrationNumber;
+import eu.merloteducation.modelslib.gxfscatalog.datatypes.StringTypeValue;
+import eu.merloteducation.modelslib.gxfscatalog.datatypes.TermsAndConditions;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.VCard;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
