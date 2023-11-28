@@ -1,7 +1,8 @@
-package eu.merloteducation.modelslib.gxfscatalog.serviceoffering.selfdescriptions;
+package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.SDProof;
+import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescriptionVerifiableCredential;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class SelfDescription {
+public class SelfDescription<T extends SelfDescriptionCredentialSubject> {
 
     @NotNull
     @JsonProperty("@id")
@@ -23,6 +24,6 @@ public class SelfDescription {
 
     private SDProof proof;
 
-    private SelfDescriptionVerifiableCredential verifiableCredential;
+    private SelfDescriptionVerifiableCredential<T> verifiableCredential;
 
 }

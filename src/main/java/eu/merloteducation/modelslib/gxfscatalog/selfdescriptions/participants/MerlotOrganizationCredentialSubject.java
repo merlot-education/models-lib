@@ -1,30 +1,18 @@
-package eu.merloteducation.modelslib.gxfscatalog.organization;
+package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.participants;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.RegistrationNumber;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.StringTypeValue;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.TermsAndConditions;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.VCard;
+import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescriptionCredentialSubject;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Map;
-
 @Getter
 @Setter
-public class MerlotOrganizationCredentialSubject {
-
-    // base fields
-
-    @JsonProperty("@id")
-    private String id;
-
-    @JsonProperty("@type")
-    private String type;
-
-    @JsonProperty("@context")
-    private Map<String, String> context;
+public class MerlotOrganizationCredentialSubject extends SelfDescriptionCredentialSubject {
 
     // inherited from gax-trust-framework:LegalPerson
     @JsonProperty("gax-trust-framework:legalName")

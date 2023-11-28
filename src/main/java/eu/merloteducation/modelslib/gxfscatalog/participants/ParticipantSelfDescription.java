@@ -2,7 +2,8 @@ package eu.merloteducation.modelslib.gxfscatalog.participants;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.SDProof;
-import eu.merloteducation.modelslib.gxfscatalog.organization.MerlotOrganizationVerifiableCredential;
+import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescriptionVerifiableCredential;
+import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.participants.MerlotOrganizationCredentialSubject;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,7 +24,7 @@ public class ParticipantSelfDescription {
     private List<String> context;
 
 
-    private MerlotOrganizationVerifiableCredential verifiableCredential;
+    private SelfDescriptionVerifiableCredential<MerlotOrganizationCredentialSubject> verifiableCredential;
 
 
 
