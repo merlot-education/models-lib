@@ -1,0 +1,23 @@
+package eu.merloteducation.modelslib.gxfscatalog.serviceoffering.selfdescriptionsmeta;
+
+import eu.merloteducation.modelslib.gxfscatalog.serviceoffering.selfdescriptions.SelfDescription;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+public class SelfDescriptionMeta {
+    private String expirationTime;
+    private SelfDescription content;
+    private List<String> validators;
+    private String subjectId;
+    private String sdHash;
+    private String id;
+    private String status;
+    private String issuer;
+    private List<String> validatorDids;
+    private String uploadDatetime;
+    private String statusDatetime;
+}
