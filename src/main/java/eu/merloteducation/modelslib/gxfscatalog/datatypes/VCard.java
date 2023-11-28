@@ -1,4 +1,4 @@
-package eu.merloteducation.modelslib.gxfscatalog.organization;
+package eu.merloteducation.modelslib.gxfscatalog.datatypes;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
@@ -12,13 +12,13 @@ public class VCard {
     private String type;
 
     @JsonProperty("vcard:country-name")
-    private StringTypeValue countryName;
+    private eu.merloteducation.modelslib.gxfscatalog.organization.StringTypeValue countryName;
 
     @JsonProperty("vcard:street-address")
-    private StringTypeValue streetAddress;
+    private eu.merloteducation.modelslib.gxfscatalog.organization.StringTypeValue streetAddress;
 
     @JsonProperty("vcard:locality")
-    private StringTypeValue locality;
+    private eu.merloteducation.modelslib.gxfscatalog.organization.StringTypeValue locality;
 
     @JsonProperty("vcard:postal-code")
     private StringTypeValue postalCode;

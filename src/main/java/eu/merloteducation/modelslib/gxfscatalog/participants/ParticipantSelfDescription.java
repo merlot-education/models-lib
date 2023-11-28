@@ -1,6 +1,8 @@
-package eu.merloteducation.modelslib.gxfscatalog.organization;
+package eu.merloteducation.modelslib.gxfscatalog.participants;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import eu.merloteducation.modelslib.gxfscatalog.datatypes.SDProof;
+import eu.merloteducation.modelslib.gxfscatalog.organization.MerlotOrganizationVerifiableCredential;
 import lombok.Getter;
 import lombok.Setter;
 

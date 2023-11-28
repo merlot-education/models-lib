@@ -1,4 +1,4 @@
-package eu.merloteducation.modelslib.gxfscatalog.organization;
+package eu.merloteducation.modelslib.gxfscatalog.participants;
 
 import lombok.Getter;
 import lombok.Setter;

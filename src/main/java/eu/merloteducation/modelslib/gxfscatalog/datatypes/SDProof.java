@@ -1,4 +1,4 @@
-package eu.merloteducation.modelslib.gxfscatalog.serviceoffering;
+package eu.merloteducation.modelslib.gxfscatalog.datatypes;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,7 +1,7 @@
 package eu.merloteducation.modelslib.gxfscatalog.serviceoffering.selfdescriptions.serviceoffering;
 
 import com.fasterxml.jackson.annotation.*;
-import eu.merloteducation.modelslib.gxfscatalog.serviceoffering.*;
+import eu.merloteducation.modelslib.gxfscatalog.datatypes.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;

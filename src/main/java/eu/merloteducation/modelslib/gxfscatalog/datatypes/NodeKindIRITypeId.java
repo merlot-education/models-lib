@@ -1,4 +1,4 @@
-package eu.merloteducation.modelslib.gxfscatalog.serviceoffering;
+package eu.merloteducation.modelslib.gxfscatalog.datatypes;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotNull;

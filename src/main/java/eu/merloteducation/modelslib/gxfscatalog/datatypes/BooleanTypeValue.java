@@ -1,25 +1,23 @@
-package eu.merloteducation.modelslib.gxfscatalog.serviceoffering;
+package eu.merloteducation.modelslib.gxfscatalog.datatypes;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-public class StringTypeValue {
+public class BooleanTypeValue {
     @NotNull
     @JsonProperty("@type")
     private String type;
 
     @NotNull
     @JsonProperty("@value")
-    private String value;
+    private boolean value;
 
-    public StringTypeValue(String value) {
-        this.type = "xsd:string";
+    public BooleanTypeValue(boolean value) {
+        this.type = "xsd:boolean";
         this.value = value;
     }
 }

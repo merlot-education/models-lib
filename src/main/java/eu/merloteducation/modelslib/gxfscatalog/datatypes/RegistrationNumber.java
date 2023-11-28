@@ -1,4 +1,4 @@
-package eu.merloteducation.modelslib.gxfscatalog.organization;
+package eu.merloteducation.modelslib.gxfscatalog.datatypes;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;

@@ -1,6 +1,6 @@
 package eu.merloteducation.modelslib.api.organization;
 
-import eu.merloteducation.modelslib.gxfscatalog.organization.ParticipantSelfDescription;
+import eu.merloteducation.modelslib.gxfscatalog.participants.ParticipantSelfDescription;
 import lombok.Getter;
 import lombok.Setter;
 
