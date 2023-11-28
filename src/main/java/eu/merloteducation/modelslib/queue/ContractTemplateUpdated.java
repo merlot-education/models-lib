@@ -1,6 +1,5 @@
 package eu.merloteducation.modelslib.queue;
 
-import eu.merloteducation.contractorchestrator.models.entities.ContractTemplate;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 
@@ -12,8 +11,8 @@ public class ContractTemplateUpdated {
     @NotNull
     private final String serviceOfferingId;
 
-    public ContractTemplateUpdated(ContractTemplate contract) {
-        this.contractId = contract.getId();
-        this.serviceOfferingId = contract.getOfferingId();
+    public ContractTemplateUpdated(String contractId, String offeringId) {
+        this.contractId = contractId;
+        this.serviceOfferingId = offeringId;
     }
 }

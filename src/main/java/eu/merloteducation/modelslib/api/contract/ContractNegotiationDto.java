@@ -1,7 +1,7 @@
 package eu.merloteducation.modelslib.api.contract;
 
 import com.fasterxml.jackson.annotation.JsonView;
-import eu.merloteducation.contractorchestrator.models.views.ContractViews;
+import eu.merloteducation.modelslib.api.contract.views.ContractViews;
 import lombok.Getter;
 import lombok.Setter;
 

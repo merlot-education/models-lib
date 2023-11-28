@@ -1,6 +1,6 @@
 package eu.merloteducation.modelslib.edc;
 
-import eu.merloteducation.contractorchestrator.models.edc.common.IdResponse;
+import eu.merloteducation.modelslib.edc.common.IdResponse;
 import lombok.Getter;
 
 @Getter

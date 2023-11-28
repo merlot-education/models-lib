@@ -1,6 +1,6 @@
 package eu.merloteducation.modelslib.api.contract;
 
-import eu.merloteducation.contractorchestrator.models.serviceofferingorchestrator.ServiceOfferingDetails;
+import eu.merloteducation.modelslib.api.serviceoffering.ServiceOfferingDto;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -13,7 +13,7 @@ public class ContractBasicDto {
 
     private String creationDate;
 
-    private ServiceOfferingDetails offering;
+    private ServiceOfferingDto offering;
 
     private String providerId;
 

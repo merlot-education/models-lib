@@ -1,7 +1,7 @@
 package eu.merloteducation.modelslib.edc.contractdefinition;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import eu.merloteducation.contractorchestrator.models.edc.EdcConstants;
+import eu.merloteducation.modelslib.edc.EdcConstants;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

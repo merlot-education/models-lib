@@ -2,10 +2,10 @@ package eu.merloteducation.modelslib.api.contract;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import eu.merloteducation.contractorchestrator.models.dto.cooperation.CooperationContractDto;
-import eu.merloteducation.contractorchestrator.models.dto.datadelivery.DataDeliveryContractDto;
-import eu.merloteducation.contractorchestrator.models.dto.saas.SaasContractDto;
-import eu.merloteducation.contractorchestrator.models.serviceofferingorchestrator.ServiceOfferingDetails;
+import eu.merloteducation.modelslib.api.contract.cooperation.CooperationContractDto;
+import eu.merloteducation.modelslib.api.contract.datadelivery.DataDeliveryContractDto;
+import eu.merloteducation.modelslib.api.contract.saas.SaasContractDto;
+import eu.merloteducation.modelslib.api.serviceoffering.ServiceOfferingDto;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,5 +22,5 @@ public class ContractDto {
     private ContractDetailsDto details;
     private ContractNegotiationDto negotiation;
     private ContractProvisioningDto provisioning;
-    private ServiceOfferingDetails offering;
+    private ServiceOfferingDto offering;
 }

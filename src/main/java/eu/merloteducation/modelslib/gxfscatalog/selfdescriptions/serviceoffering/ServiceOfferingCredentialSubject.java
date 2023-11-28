@@ -1,13 +1,14 @@
 package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.serviceoffering;
 
 import com.fasterxml.jackson.annotation.*;
-import eu.merloteducation.serviceofferingorchestrator.models.gxfscatalog.*;
+import eu.merloteducation.modelslib.gxfscatalog.*;
+import eu.merloteducation.modelslib.gxfscatalog.Runtime;
+import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescriptionCredentialSubject;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
-import java.util.Map;
 
 @Getter
 @Setter
@@ -18,22 +19,7 @@ import java.util.Map;
         @JsonSubTypes.Type(value = CooperationCredentialSubject.class, name = "merlot:MerlotServiceOfferingCooperation")
 })
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public abstract class ServiceOfferingCredentialSubject {
-
-    // general catalog fields
-
-    @NotNull
-    @JsonProperty("@id")
-    private String id;
-
-    @NotNull
-    @JsonProperty("@type")
-    private String type;
-
-    @NotNull
-    @JsonProperty("@context")
-    private Map<String, String> context;
-
+public abstract class ServiceOfferingCredentialSubject extends SelfDescriptionCredentialSubject {
     // inherited from gax-core:ServiceOffering
 
     @NotNull

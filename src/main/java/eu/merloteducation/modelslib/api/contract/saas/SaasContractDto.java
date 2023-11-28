@@ -1,6 +1,6 @@
 package eu.merloteducation.modelslib.api.contract.saas;
 
-import eu.merloteducation.contractorchestrator.models.dto.ContractDto;
+import eu.merloteducation.modelslib.api.contract.ContractDto;
 import lombok.Getter;
 import lombok.Setter;
 

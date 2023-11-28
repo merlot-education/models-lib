@@ -1,6 +1,6 @@
 package eu.merloteducation.modelslib.api.organization;
 
-import eu.merloteducation.organisationsorchestrator.models.gxfscatalog.ParticipantSelfDescription;
+import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescription;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,5 +9,5 @@ import lombok.Setter;
 public class MerlotParticipantDto {
     private String id;
     private MerlotParticipantMetaDto metadata;
-    private ParticipantSelfDescription selfDescription;
+    private SelfDescription selfDescription;
 }

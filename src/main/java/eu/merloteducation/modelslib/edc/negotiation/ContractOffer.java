@@ -1,8 +1,8 @@
 package eu.merloteducation.modelslib.edc.negotiation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import eu.merloteducation.contractorchestrator.models.edc.EdcConstants;
-import eu.merloteducation.contractorchestrator.models.edc.policy.Policy;
+import eu.merloteducation.modelslib.edc.EdcConstants;
+import eu.merloteducation.modelslib.edc.policy.Policy;
 import lombok.*;
 
 @Getter

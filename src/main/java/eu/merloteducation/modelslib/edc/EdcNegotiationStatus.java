@@ -1,6 +1,6 @@
 package eu.merloteducation.modelslib.edc;
 
-import eu.merloteducation.contractorchestrator.models.edc.negotiation.ContractNegotiation;
+import eu.merloteducation.modelslib.edc.negotiation.ContractNegotiation;
 import lombok.Getter;
 
 @Getter

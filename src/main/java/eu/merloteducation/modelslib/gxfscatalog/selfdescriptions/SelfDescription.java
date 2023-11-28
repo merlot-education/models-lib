@@ -1,7 +1,7 @@
 package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import eu.merloteducation.serviceofferingorchestrator.models.gxfscatalog.SDProof;
+import eu.merloteducation.modelslib.gxfscatalog.SDProof;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;

@@ -1,8 +1,8 @@
 package eu.merloteducation.modelslib.edc.transfer;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import eu.merloteducation.contractorchestrator.models.edc.EdcConstants;
-import eu.merloteducation.contractorchestrator.models.edc.asset.IonosS3DataAddress;
+import eu.merloteducation.modelslib.edc.EdcConstants;
+import eu.merloteducation.modelslib.edc.asset.IonosS3DataAddress;
 import lombok.Getter;
 import lombok.Setter;
 

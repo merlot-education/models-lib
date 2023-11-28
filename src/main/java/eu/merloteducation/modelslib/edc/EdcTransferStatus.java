@@ -1,6 +1,6 @@
 package eu.merloteducation.modelslib.edc;
 
-import eu.merloteducation.contractorchestrator.models.edc.transfer.IonosS3TransferProcess;
+import eu.merloteducation.modelslib.edc.transfer.IonosS3TransferProcess;
 import lombok.Getter;
 
 @Getter
