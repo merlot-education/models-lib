@@ -2,12 +2,11 @@ package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.serviceofferin
 
 import com.fasterxml.jackson.annotation.*;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.*;
+import eu.merloteducation.modelslib.gxfscatalog.datatypes.Runtime;
 import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescriptionCredentialSubject;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.lang.Runtime;
 import java.util.List;
 
 @Getter
