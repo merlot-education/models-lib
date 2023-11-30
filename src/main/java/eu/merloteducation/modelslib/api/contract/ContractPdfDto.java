@@ -27,13 +27,13 @@ public class ContractPdfDto {
     private String serviceHardwareRequirements;//saas
 
     private String providerLegalName;
-    private Map<String, String> providerLegalAddress;
+    private ContractPdfAddressDto providerLegalAddress;
     private String providerSignerUser;
     private String providerSignature;
     private String providerSignatureTimestamp;
 
     private String consumerLegalName;
-    private Map<String, String> consumerLegalAddress;
+    private ContractPdfAddressDto consumerLegalAddress;
     private String consumerSignerUser;
     private String consumerSignature;
     private String consumerSignatureTimestamp;

@@ -1,6 +1,7 @@
 package eu.merloteducation.modelslib.api.contract;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import eu.merloteducation.modelslib.gxfscatalog.datatypes.VCard;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -20,13 +21,13 @@ public class ContractDetailsDto {
 
     private String providerLegalName;
 
-    private JsonNode providerLegalAddress;
+    private VCard providerLegalAddress;
 
     private String consumerId;
 
     private String consumerLegalName;
 
-    private JsonNode consumerLegalAddress;
+    private VCard consumerLegalAddress;
 
     private String state;
 
