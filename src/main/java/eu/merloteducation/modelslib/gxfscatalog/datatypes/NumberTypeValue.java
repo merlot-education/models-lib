@@ -19,7 +19,7 @@ public class NumberTypeValue {
     private int value;
 
     public NumberTypeValue(int value) {
-        this.type = "xsd:number";
+        this.type = "xsd:integer";
         this.value = value;
     }
 }
