@@ -1,6 +1,5 @@
 package eu.merloteducation.modelslib.api.contract;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.VCard;
 import lombok.Getter;
 import lombok.Setter;

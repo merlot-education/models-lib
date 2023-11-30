@@ -2,7 +2,6 @@ package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.SDProof;
-import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.serviceofferings.ServiceOfferingCredentialSubject;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,7 +1,5 @@
 package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions;
 
-import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescription;
-import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescriptionCredentialSubject;
 import lombok.Getter;
 import lombok.Setter;
 

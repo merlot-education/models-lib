@@ -2,7 +2,6 @@ package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.SDProof;
-import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescriptionVerifiableCredential;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
