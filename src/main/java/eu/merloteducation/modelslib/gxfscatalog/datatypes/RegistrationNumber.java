@@ -12,4 +12,13 @@ public class RegistrationNumber {
 
     @JsonProperty("gax-trust-framework:local")
     private StringTypeValue local;
+
+    @JsonProperty("gax-trust-framework:EUID")
+    private StringTypeValue euid;
+
+    @JsonProperty("gax-trust-framework:EORI")
+    private StringTypeValue eori;
+
+    @JsonProperty("gax-trust-framework:vatID")
+    private StringTypeValue vatId;
 }
