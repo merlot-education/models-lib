@@ -21,4 +21,7 @@ public class RegistrationNumber {
 
     @JsonProperty("gax-trust-framework:vatID")
     private StringTypeValue vatId;
+
+    @JsonProperty("gax-trust-framework:leiCode")
+    private StringTypeValue leiCode;
 }
