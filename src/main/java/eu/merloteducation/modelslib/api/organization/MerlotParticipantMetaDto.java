@@ -1,5 +1,12 @@
 package eu.merloteducation.modelslib.api.organization;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class MerlotParticipantMetaDto {
-    // will be created later
+    private String orgaId;
+    private String mailAddress;
+    private String membershipClass;
 }
