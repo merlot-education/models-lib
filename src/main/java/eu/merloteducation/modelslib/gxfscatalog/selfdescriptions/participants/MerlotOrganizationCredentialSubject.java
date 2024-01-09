@@ -46,10 +46,6 @@ public class MerlotOrganizationCredentialSubject extends SelfDescriptionCredenti
     @NotNull
     private StringTypeValue merlotId;
 
-    @JsonProperty("merlot:mailAddress")
-    @NotNull
-    private StringTypeValue mailAddress;
-
     @JsonProperty("merlot:termsAndConditions")
     @NotNull
     private TermsAndConditions termsAndConditions;
