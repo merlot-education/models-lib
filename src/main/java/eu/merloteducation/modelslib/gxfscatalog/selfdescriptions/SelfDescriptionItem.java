@@ -7,6 +7,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @JsonIgnoreProperties(value = {"content"})
-public class SelfDescriptionItem<T extends SelfDescriptionCredentialSubject> {
-    private SelfDescriptionMeta<T> meta;
+public class SelfDescriptionItem {
+    private SelfDescriptionMeta meta;
 }

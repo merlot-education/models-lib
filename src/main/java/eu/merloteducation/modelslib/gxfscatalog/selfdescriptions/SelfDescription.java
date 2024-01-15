@@ -10,7 +10,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class SelfDescription<T extends SelfDescriptionCredentialSubject> {
+public class SelfDescription {
 
     @NotNull
     @JsonProperty("@id")
@@ -23,6 +23,6 @@ public class SelfDescription<T extends SelfDescriptionCredentialSubject> {
 
     private SDProof proof;
 
-    private SelfDescriptionVerifiableCredential<T> verifiableCredential;
+    private SelfDescriptionVerifiableCredential verifiableCredential;
 
 }

@@ -7,9 +7,9 @@ import java.util.List;
 
 @Getter
 @Setter
-public class SelfDescriptionMeta<T extends SelfDescriptionCredentialSubject> {
+public class SelfDescriptionMeta {
     private String expirationTime;
-    private SelfDescription<T> content;
+    private SelfDescription content;
     private List<String> validators;
     private String subjectId;
     private String sdHash;

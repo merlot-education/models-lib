@@ -9,7 +9,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class SelfDescriptionVerifiableCredential<T extends SelfDescriptionCredentialSubject> {
+public class SelfDescriptionVerifiableCredential {
     @JsonProperty("@context")
     private List<String> context;
     @JsonProperty("@id")
@@ -19,5 +19,5 @@ public class SelfDescriptionVerifiableCredential<T extends SelfDescriptionCreden
     private String issuer;
     private String issuanceDate;
     private SDProof proof;
-    private T credentialSubject;
+    private SelfDescriptionCredentialSubject credentialSubject;
 }
