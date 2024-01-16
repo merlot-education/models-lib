@@ -14,7 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class DataDeliveryCredentialSubject extends ServiceOfferingCredentialSubject {
+public class DataDeliveryCredentialSubject extends MerlotServiceOfferingCredentialSubject {
     // inherited from merlot:MerlotServiceOfferingDataDelivery
 
     @NotNull

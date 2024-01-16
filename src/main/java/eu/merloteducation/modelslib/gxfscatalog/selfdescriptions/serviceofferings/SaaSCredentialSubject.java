@@ -13,7 +13,7 @@ import java.util.List;
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class SaaSCredentialSubject extends ServiceOfferingCredentialSubject {
+public class SaaSCredentialSubject extends MerlotServiceOfferingCredentialSubject {
     // inherited from merlot:MerlotServiceOfferingSaaS
 
     @JsonProperty("merlot:hardwareRequirements")

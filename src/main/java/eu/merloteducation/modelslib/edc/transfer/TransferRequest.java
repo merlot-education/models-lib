@@ -19,7 +19,7 @@ public class TransferRequest {
 
     private static final String TYPE = EdcConstants.EDC_PREFIX + "TransferRequestDto";
 
-    private static final boolean MANAGED_RESOURCES = false;
+    private static final boolean MANAGED_RESOURCES = true;
 
     private static final String PROTOCOL = "dataspace-protocol-http";
 

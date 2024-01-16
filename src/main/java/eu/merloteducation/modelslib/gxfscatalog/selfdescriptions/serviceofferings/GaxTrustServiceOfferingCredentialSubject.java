@@ -2,8 +2,6 @@ package eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.serviceofferin
 
 import com.fasterxml.jackson.annotation.*;
 import eu.merloteducation.modelslib.gxfscatalog.datatypes.*;
-import eu.merloteducation.modelslib.gxfscatalog.datatypes.Runtime;
-import eu.merloteducation.modelslib.gxfscatalog.selfdescriptions.SelfDescriptionCredentialSubject;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,31 +9,9 @@ import java.util.List;
 
 @Getter
 @Setter
-@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, visible = true)
-@JsonSubTypes({
-        @JsonSubTypes.Type(value = DataDeliveryCredentialSubject.class, name = "merlot:MerlotServiceOfferingDataDelivery"),
-        @JsonSubTypes.Type(value = SaaSCredentialSubject.class, name = "merlot:MerlotServiceOfferingSaaS"),
-        @JsonSubTypes.Type(value = CooperationCredentialSubject.class, name = "merlot:MerlotServiceOfferingCooperation")
-})
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public abstract class ServiceOfferingCredentialSubject extends SelfDescriptionCredentialSubject {
-
-    // inherited from gax-core:ServiceOffering
-
-    @NotNull
-    @JsonProperty("gax-core:offeredBy")
-    private NodeKindIRITypeId offeredBy;
-
-    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
-    @JsonProperty("gax-core:aggregationOf")
-    private List<NodeKindIRITypeId> coreAggregationOf;
-
-    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
-    @JsonProperty("gax-core:dependsOn")
-    private List<NodeKindIRITypeId> coreDependsOn;
-
+public class GaxTrustServiceOfferingCredentialSubject extends GaxCoreServiceOfferingCredentialSubject {
     // inherited from gax-trust-framework:ServiceOffering
-
     @NotNull
     @JsonProperty("gax-trust-framework:name")
     private StringTypeValue name;
@@ -88,21 +64,4 @@ public abstract class ServiceOfferingCredentialSubject extends SelfDescriptionCr
     @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
     @JsonProperty("gax-trust-framework:ServiceOfferingLocations")
     private List<StringTypeValue> serviceOfferingLocations;
-
-    // inherited from merlot:MerlotServiceOffering
-
-    @NotNull
-    @JsonProperty("merlot:creationDate")
-    private StringTypeValue creationDate;
-
-    @JsonProperty("merlot:exampleCosts")
-    private StringTypeValue exampleCosts;
-
-    @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
-    @JsonProperty("merlot:runtimeOption")
-    private List<Runtime> runtimeOptions;
-
-    @NotNull
-    @JsonProperty("merlot:merlotTermsAndConditionsAccepted")
-    private boolean merlotTermsAndConditionsAccepted;
 }
