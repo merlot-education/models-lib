@@ -1,6 +1,6 @@
 package eu.merloteducation.modelslib.api.contract;
 
-import eu.merloteducation.modelslib.gxfscatalog.datatypes.VCard;
+import eu.merloteducation.gxfscataloglibrary.models.datatypes.VCard;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

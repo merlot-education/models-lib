@@ -6,7 +6,7 @@
 
   <groupId>eu.merloteducation.modelslib</groupId>
   <artifactId>modelslib</artifactId>
-  <version>0.1.25</version>
+  <version>0.1.26</version>
 
   <name>modelslib</name>
   <url>https://merlot-education.eu/</url>
@@ -48,6 +48,11 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>eu.merlot-education</groupId>
+      <artifactId>gxfscatalog-library</artifactId>
+      <version>0.0.39</version>
     </dependency>
   </dependencies>
 
