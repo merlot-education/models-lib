@@ -8,5 +8,5 @@ import lombok.Setter;
 public class MerlotParticipantMetaDto {
     private String orgaId;
     private String mailAddress;
-    private String membershipClass;
+    private MembershipClass membershipClass;
 }
