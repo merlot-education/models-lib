@@ -9,4 +9,5 @@ public class MerlotParticipantMetaDto {
     private String orgaId;
     private String mailAddress;
     private MembershipClass membershipClass;
+    private boolean active;
 }

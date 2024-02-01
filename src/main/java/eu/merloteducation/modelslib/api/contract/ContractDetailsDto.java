@@ -22,11 +22,15 @@ public class ContractDetailsDto {
 
     private VCard providerLegalAddress;
 
+    private boolean isProviderActive;
+
     private String consumerId;
 
     private String consumerLegalName;
 
     private VCard consumerLegalAddress;
+
+    private boolean isConsumerActive;
 
     private String state;
 

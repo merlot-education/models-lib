@@ -19,9 +19,13 @@ public class ContractBasicDto {
 
     private String providerLegalName;
 
+    private boolean isProviderActive;
+
     private String consumerId;
 
     private String consumerLegalName;
+
+    private boolean isConsumerActive;
 
     private String state;
 }
