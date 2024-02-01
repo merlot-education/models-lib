@@ -18,8 +18,6 @@ public class PolicyCreateRequest {
 
     @JsonProperty("@id")
     private String id;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "policy")
     private Policy policy;
 
     @JsonProperty("@context")

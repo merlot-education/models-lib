@@ -16,23 +16,14 @@ import java.util.Map;
 public class NegotiationInitiateRequest {
     private static final Map<String, String> CONTEXT = EdcConstants.EDC_CONTEXT;
 
-    private static final String TYPE = EdcConstants.EDC_PREFIX + "NegotiationInitiateRequestDto";
+    private static final String TYPE = "NegotiationInitiateRequestDto";
 
     private static final String PROTOCOL = "dataspace-protocol-http";
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "connectorId")
     private String connectorId;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "consumerId")
     private String consumerId;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "providerId")
     private String providerId;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "connectorAddress")
     private String connectorAddress;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "offer")
     private ContractOffer offer;
 
     @JsonProperty("@context")
@@ -45,7 +36,7 @@ public class NegotiationInitiateRequest {
         return TYPE;
     }
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "protocol")
+    @JsonProperty("protocol")
     public String getProtocol() {
         return PROTOCOL;
     }

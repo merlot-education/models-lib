@@ -12,12 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class HttpDataAddressProperties {
-    @JsonProperty(EdcConstants.EDC_PREFIX + "name")
     private String name;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "baseUrl")
     private String baseUrl;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "type")
     private String type;
 }

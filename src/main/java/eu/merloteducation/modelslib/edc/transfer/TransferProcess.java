@@ -21,18 +21,11 @@ public abstract class TransferProcess {
     @JsonProperty("@type")
     private String type;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "state")
     private String state;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "stateTimestamp")
     private String stateTimestamp;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "type")
+    @JsonProperty("type")
     private String edcType;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "callbackAddresses")
     private List<String> callbackAddresses;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "dataRequest")
     private DataRequest dataRequest;
 }

@@ -26,18 +26,14 @@ public class DcatDataset {
     @JsonProperty(EdcConstants.DCAT_PREFIX + "distribution")
     private List<DcatDistribution> distribution;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "version")
     private String version;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "name")
     private String name;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "description")
     private String description;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "id")
+    @JsonProperty("id")
     private String assetId;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "contenttype")
     private String contenttype;
 }

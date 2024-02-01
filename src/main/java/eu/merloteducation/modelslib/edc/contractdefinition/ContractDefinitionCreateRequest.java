@@ -17,17 +17,15 @@ import java.util.Map;
 public class ContractDefinitionCreateRequest {
     private static final Map<String, String> CONTEXT = EdcConstants.EDC_CONTEXT;
 
-    private static final String TYPE = EdcConstants.EDC_PREFIX + "ContractDefinition";
+    private static final String TYPE = "ContractDefinition";
 
     private List<Criterion> assetsSelector;
 
     @JsonProperty("@id")
     private String id;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "accessPolicyId")
     private String accessPolicyId;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "contractPolicyId")
     private String contractPolicyId;
 
     @JsonProperty("@context")

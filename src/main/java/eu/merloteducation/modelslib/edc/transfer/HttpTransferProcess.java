@@ -9,6 +9,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public class HttpTransferProcess extends TransferProcess{
-    @JsonProperty(EdcConstants.EDC_PREFIX + "dataDestination")
     private HttpDataAddress dataDestination;
 }

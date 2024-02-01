@@ -15,8 +15,6 @@ public class IdResponse {
 
     @JsonProperty("@id")
     private String id;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "createdAt")
     private long createdAt;
 
     @JsonProperty("@context")

@@ -12,16 +12,11 @@ import lombok.*;
 public class Criterion {
 
     @JsonProperty("@type")
-    private String type = EdcConstants.EDC_PREFIX + "CriterionDto";
+    private String type = "CriterionDto";
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "operandLeft")
     private Object operandLeft;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "operator")
     private String operator;
-
     @JsonFormat(with = JsonFormat.Feature.ACCEPT_SINGLE_VALUE_AS_ARRAY)
-    @JsonProperty(EdcConstants.EDC_PREFIX + "operandRight")
     private Object operandRight;
 
     @Builder

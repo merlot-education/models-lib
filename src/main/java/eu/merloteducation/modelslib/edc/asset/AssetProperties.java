@@ -10,15 +10,11 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class AssetProperties {
-    @JsonProperty(EdcConstants.EDC_PREFIX + "name")
     private String name;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "description")
     private String description;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "version")
     private String version;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "contenttype")
     private String contenttype;
 }

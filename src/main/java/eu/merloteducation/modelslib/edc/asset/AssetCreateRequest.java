@@ -19,10 +19,8 @@ public class AssetCreateRequest {
     @JsonProperty("@id")
     private String id;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "properties")
     private AssetProperties properties;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "dataAddress")
     private DataAddress dataAddress;
 
     @JsonProperty("@context")
