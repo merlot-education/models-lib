@@ -16,8 +16,11 @@ import java.util.Map;
 public class AssetCreateRequest {
     private static final Map<String, String> CONTEXT = EdcConstants.EDC_CONTEXT;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "asset")
-    private Asset asset;
+    @JsonProperty("@id")
+    private String id;
+
+    @JsonProperty(EdcConstants.EDC_PREFIX + "properties")
+    private AssetProperties properties;
 
     @JsonProperty(EdcConstants.EDC_PREFIX + "dataAddress")
     private DataAddress dataAddress;
