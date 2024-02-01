@@ -24,7 +24,7 @@ public class TransferRequest {
     private static final String PROTOCOL = "dataspace-protocol-http";
 
     private String connectorId;
-    private String connectorAddress;
+    private String counterPartyAddress;
     private String contractId;
     private String assetId;
     private DataAddress dataDestination;

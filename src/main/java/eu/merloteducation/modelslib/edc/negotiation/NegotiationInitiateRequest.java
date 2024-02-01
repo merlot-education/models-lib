@@ -23,8 +23,8 @@ public class NegotiationInitiateRequest {
     private String connectorId;
     private String consumerId;
     private String providerId;
-    private String connectorAddress;
-    private ContractOffer offer;
+    private String counterPartyAddress;
+    private ContractOffer offer; // TODO deprecated for policy?
 
     @JsonProperty("@context")
     public Map<String, String> getContext() {
