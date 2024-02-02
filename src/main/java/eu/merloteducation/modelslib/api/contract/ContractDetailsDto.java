@@ -22,7 +22,7 @@ public class ContractDetailsDto {
 
     private VCard providerLegalAddress;
 
-    private boolean isProviderActive;
+    private boolean providerActive;
 
     private String consumerId;
 
@@ -30,7 +30,7 @@ public class ContractDetailsDto {
 
     private VCard consumerLegalAddress;
 
-    private boolean isConsumerActive;
+    private boolean consumerActive;
 
     private String state;
 
