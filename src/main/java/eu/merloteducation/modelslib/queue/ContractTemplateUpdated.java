@@ -1,5 +1,6 @@
 package eu.merloteducation.modelslib.queue;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 
@@ -11,8 +12,9 @@ public class ContractTemplateUpdated {
     @NotNull
     private final String serviceOfferingId;
 
-    public ContractTemplateUpdated(String contractId, String offeringId) {
+    public ContractTemplateUpdated(@JsonProperty("contractId") String contractId,
+                                   @JsonProperty("serviceOfferingId") String serviceOfferingId) {
         this.contractId = contractId;
-        this.serviceOfferingId = offeringId;
+        this.serviceOfferingId = serviceOfferingId;
     }
 }
