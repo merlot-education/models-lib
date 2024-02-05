@@ -17,16 +17,14 @@ public class CatalogRequest {
     private static final Map<String, String> CONTEXT = EdcConstants.EDC_CONTEXT;
 
     private static final String PROTOCOL = "dataspace-protocol-http";
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "providerUrl")
-    private String providerUrl;
+    private String counterPartyAddress;
 
     @JsonProperty("@context")
     public Map<String, String> getContext() {
         return CONTEXT;
     }
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "protocol")
+    @JsonProperty("protocol")
     public String getProtocol() {
         return PROTOCOL;
     }

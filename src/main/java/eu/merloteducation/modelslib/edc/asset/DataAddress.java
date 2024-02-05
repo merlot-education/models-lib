@@ -10,7 +10,7 @@ import lombok.ToString;
 @Setter
 @ToString
 public abstract class DataAddress {
-    private static final String TYPE = EdcConstants.EDC_PREFIX + "DataAddress";
+    private static final String TYPE = "DataAddress";
 
     @JsonProperty("@type")
     public String getType() {

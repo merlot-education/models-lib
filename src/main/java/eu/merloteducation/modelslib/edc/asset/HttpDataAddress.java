@@ -14,11 +14,9 @@ import lombok.Setter;
 public class HttpDataAddress extends DataAddress {
 
     private static final String TYPE = "HttpData";
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "properties")
     private HttpDataAddressProperties properties;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "type")
+    @JsonProperty("type")
     public String getDataType() {
         return TYPE;
     }

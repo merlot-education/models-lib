@@ -17,25 +17,16 @@ import java.util.Map;
 public class TransferRequest {
     private static final Map<String, String> CONTEXT = EdcConstants.EDC_CONTEXT;
 
-    private static final String TYPE = EdcConstants.EDC_PREFIX + "TransferRequestDto";
+    private static final String TYPE = "TransferRequestDto";
 
     private static final boolean MANAGED_RESOURCES = true;
 
     private static final String PROTOCOL = "dataspace-protocol-http";
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "connectorId")
     private String connectorId;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "connectorAddress")
-    private String connectorAddress;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "contractId")
+    private String counterPartyAddress;
     private String contractId;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "assetId")
     private String assetId;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "dataDestination")
     private DataAddress dataDestination;
 
     @JsonProperty("@type")
@@ -43,7 +34,7 @@ public class TransferRequest {
         return TYPE;
     }
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "protocol")
+    @JsonProperty("protocol")
     public String getProtocol() {
         return PROTOCOL;
     }
@@ -53,7 +44,7 @@ public class TransferRequest {
         return CONTEXT;
     }
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "managedResources")
+    @JsonProperty("managedResources")
     public boolean isManagedResources() {
         return MANAGED_RESOURCES;
     }

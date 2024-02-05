@@ -18,7 +18,6 @@ public class DcatCatalog {
     @JsonProperty("@type")
     private String type;
 
-    @JsonProperty(EdcConstants.EDC_PREFIX + "participantId")
     private String participantId;
 
     @JsonProperty("@context")

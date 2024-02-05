@@ -9,6 +9,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public class IonosS3TransferProcess extends TransferProcess {
-    @JsonProperty(EdcConstants.EDC_PREFIX + "dataDestination")
     private IonosS3DataAddress dataDestination;
 }

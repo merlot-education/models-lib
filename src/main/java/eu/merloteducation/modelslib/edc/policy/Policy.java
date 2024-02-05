@@ -29,7 +29,7 @@ public class Policy {
     private List<String> obligation; // TODO replace this with proper classes once needed
 
     @JsonProperty(EdcConstants.ODRL_PREFIX + "target")
-    private String target;
+    private PolicyTarget target;
 
     @JsonProperty("@type")
     public String getType() {

@@ -13,13 +13,7 @@ public class DataRequest {
 
     @JsonProperty("@id")
     private String id;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "assetId")
     private String assetId;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "contractId")
     private String contractId;
-
-    @JsonProperty(EdcConstants.EDC_PREFIX + "connectorId")
     private String connectorId;
 }
