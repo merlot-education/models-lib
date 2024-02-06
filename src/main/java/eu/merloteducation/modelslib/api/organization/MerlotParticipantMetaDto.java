@@ -9,4 +9,5 @@ public class MerlotParticipantMetaDto {
     private String orgaId; // TODO the dto probably should not contain this...
     private String mailAddress;
     private MembershipClass membershipClass;
+    private boolean active;
 }
