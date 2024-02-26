@@ -3,37 +3,27 @@ package eu.merloteducation.modelslib.api.organization;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
-public class OrganizationConnectorTransferDto {
+public class OrganizationConnectorTransferDto extends OrganizationConnectorDto {
     private String orgaId;
 
-    private String connectorId;
-
-    private String connectorEndpoint;
-
-    private String connectorAccessToken;
-
-    private List<String> bucketNames;
-
     public String getApiBaseUrl() {
-        return this.connectorEndpoint + "/api";
+        return this.getConnectorEndpoint() + "/api";
     }
     public String getManagementBaseUrl() {
-        return this.connectorEndpoint + "/management";
+        return this.getConnectorEndpoint() + "/management";
     }
 
     public String getProtocolBaseUrl() {
-        return this.connectorEndpoint + "/protocol";
+        return this.getConnectorEndpoint() + "/protocol";
     }
 
     public String getPublicBaseUrl() {
-        return this.connectorEndpoint + "/public";
+        return this.getConnectorEndpoint() + "/public";
     }
 
     public String getControlBaseUrl() {
-        return this.connectorEndpoint + "/control";
+        return this.getConnectorEndpoint() + "/control";
     }
 }
