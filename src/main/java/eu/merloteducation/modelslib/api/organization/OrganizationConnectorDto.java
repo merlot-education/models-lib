@@ -1,12 +1,14 @@
 package eu.merloteducation.modelslib.api.organization;
 
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+@Data
+@NoArgsConstructor
 public class OrganizationConnectorDto {
     private String connectorId;
 
@@ -14,5 +16,5 @@ public class OrganizationConnectorDto {
 
     private String connectorAccessToken;
 
-    private List<String> bucketNames;
+    private IonosS3ExtensionConfigDto ionosS3ExtensionConfig;
 }
