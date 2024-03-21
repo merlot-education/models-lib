@@ -15,6 +15,8 @@ import lombok.experimental.SuperBuilder;
 public abstract class DataAddress {
     private static final String TYPE = "DataAddress";
 
+    private String keyName;
+
     @JsonProperty("@type")
     public String getType() {
         return TYPE;

@@ -13,10 +13,7 @@ public class IonosS3DataAddress extends DataAddress {
 
     private static final String TYPE = "IonosS3";
 
-    private String name; // TODO check if needed
     private String bucketName;
-    private String container; // TODO check if needed
-    private String keyName;
     private String storage;
 
     @JsonProperty("type")
