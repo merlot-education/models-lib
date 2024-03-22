@@ -25,7 +25,7 @@ public class DataDeliveryContractProvisioningDto extends ContractProvisioningDto
     private String dataAddressTargetBucketName;
 
     @JsonView(ContractViews.ConsumerView.class)
-    private String dataAddressTargetFileName;
+    private String dataAddressTargetPath;
 
     @JsonView(ContractViews.ConsumerView.class)
     private String selectedConsumerConnectorId;
