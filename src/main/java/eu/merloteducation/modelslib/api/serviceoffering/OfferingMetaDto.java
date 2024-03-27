@@ -10,4 +10,5 @@ public class OfferingMetaDto {
     String hash;
     String creationDate;
     String modifiedDate;
+    String signedBy;
 }
