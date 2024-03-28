@@ -15,4 +15,5 @@ public class MerlotParticipantMetaDto {
     private boolean active;
     private Set<OrganizationConnectorDto> connectors = new HashSet<>();
     private OrganisationSignerConfigDto organisationSignerConfigDto;
+    private String signedBy;
 }
