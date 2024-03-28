@@ -11,9 +11,9 @@ import lombok.Setter;
 public class DataDeliveryContractProvisioningDto extends ContractProvisioningDto {
 
     @JsonView(ContractViews.ConsumerView.class)
-    private ConsumerTransferProvisioningDto consumerTransferProvisioning;
+    private TransferProvisioningDto consumerTransferProvisioning;
 
     @JsonView(ContractViews.ProviderView.class)
-    private ProviderTransferProvisioningDto providerTransferProvisioning;
+    private TransferProvisioningDto providerTransferProvisioning;
 
 }
