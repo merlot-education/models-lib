@@ -9,24 +9,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class DataDeliveryContractProvisioningDto extends ContractProvisioningDto {
-    @JsonView(ContractViews.ProviderView.class)
-    private String dataAddressType;
-
-    @JsonView(ContractViews.ProviderView.class)
-    private String dataAddressSourceBucketName;
-
-    @JsonView(ContractViews.ProviderView.class)
-    private String dataAddressSourceFileName;
-
-    @JsonView(ContractViews.ProviderView.class)
-    private String selectedProviderConnectorId;
 
     @JsonView(ContractViews.ConsumerView.class)
-    private String dataAddressTargetBucketName;
+    private TransferProvisioningDto consumerTransferProvisioning;
 
-    @JsonView(ContractViews.ConsumerView.class)
-    private String dataAddressTargetPath;
+    @JsonView(ContractViews.ProviderView.class)
+    private TransferProvisioningDto providerTransferProvisioning;
 
-    @JsonView(ContractViews.ConsumerView.class)
-    private String selectedConsumerConnectorId;
 }
