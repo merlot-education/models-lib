@@ -6,8 +6,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class OfferingMetaDto {
-    String state;
-    String hash;
-    String creationDate;
-    String modifiedDate;
+    private String state;
+    private String hash;
+    private String creationDate;
+    private String modifiedDate;
+    private String signedBy;
 }
