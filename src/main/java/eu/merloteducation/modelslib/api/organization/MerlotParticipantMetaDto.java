@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -16,4 +17,5 @@ public class MerlotParticipantMetaDto {
     private Set<OrganizationConnectorDto> connectors = new HashSet<>();
     private OrganisationSignerConfigDto organisationSignerConfigDto;
     private String signedBy;
+    private List<DapsCertificateDto> dapsCertificates;
 }
