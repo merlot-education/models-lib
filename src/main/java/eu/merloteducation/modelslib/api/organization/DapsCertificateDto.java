@@ -12,4 +12,5 @@ public class DapsCertificateDto {
     private String clientId;
     private String keystore;
     private String password;
+    private String scope;
 }

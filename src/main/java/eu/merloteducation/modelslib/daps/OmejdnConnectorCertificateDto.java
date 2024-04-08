@@ -11,10 +11,16 @@ import lombok.NoArgsConstructor;
 public class OmejdnConnectorCertificateDto {
     @JsonProperty("client_name")
     private String clientName;
+
     @JsonProperty("client_id")
     private String clientId;
+
     @JsonProperty("keystore")
     private String keystore;
+
     @JsonProperty("password")
     private String password;
+
+    @JsonProperty("scope")
+    private String scope;
 }
