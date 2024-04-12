@@ -38,13 +38,9 @@ public class ContractDetailsDto {
 
     private String consumerSignerUserName;
 
-    private String consumerSignature;
-
     private String consumerSignatureDate;
 
     private String providerSignerUserName;
-
-    private String providerSignature;
 
     private String providerSignatureDate;
 }

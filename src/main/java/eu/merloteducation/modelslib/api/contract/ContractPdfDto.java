@@ -29,12 +29,10 @@ public class ContractPdfDto {
     private String providerLegalName;
     private ContractPdfAddressDto providerLegalAddress;
     private String providerSignerUser;
-    private String providerSignature;
     private String providerSignatureTimestamp;
 
     private String consumerLegalName;
     private ContractPdfAddressDto consumerLegalAddress;
     private String consumerSignerUser;
-    private String consumerSignature;
     private String consumerSignatureTimestamp;
 }
