@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class OrganisationSignerConfigDto {
     private String privateKey;
-    private String merlotVerificationMethod;
     private String verificationMethod;
+    private String merlotVerificationMethod;
 }
