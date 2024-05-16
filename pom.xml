@@ -6,7 +6,7 @@
 
   <groupId>eu.merloteducation.modelslib</groupId>
   <artifactId>modelslib</artifactId>
-  <version>0.3.20</version>
+  <version>0.3.21</version>
 
   <name>modelslib</name>
   <url>https://merlot-education.eu/</url>
@@ -71,7 +71,7 @@
     <dependency>
       <groupId>eu.merlot-education</groupId>
       <artifactId>gxfscatalog-library</artifactId>
-      <version>0.4.4</version>
+      <version>0.5.0</version>
     </dependency>
   </dependencies>
 
