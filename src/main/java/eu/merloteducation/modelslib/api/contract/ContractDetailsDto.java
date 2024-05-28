@@ -1,6 +1,5 @@
 package eu.merloteducation.modelslib.api.contract;
 
-import eu.merloteducation.gxfscataloglibrary.models.selfdescriptions.gax.datatypes.VCard;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -20,7 +19,7 @@ public class ContractDetailsDto {
 
     private String providerLegalName;
 
-    private VCard providerLegalAddress;
+    private ContractVcard providerLegalAddress;
 
     private boolean providerActive;
 
@@ -28,7 +27,7 @@ public class ContractDetailsDto {
 
     private String consumerLegalName;
 
-    private VCard consumerLegalAddress;
+    private ContractVcard consumerLegalAddress;
 
     private boolean consumerActive;
 
