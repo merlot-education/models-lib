@@ -18,4 +18,5 @@ public class MerlotParticipantMetaDto {
     private OrganisationSignerConfigDto organisationSignerConfigDto;
     private String signedBy;
     private List<DapsCertificateDto> dapsCertificates;
+    private Set<ParticipantAgentSettingsDto> ocmAgentSettings;
 }
