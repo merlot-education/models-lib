@@ -13,8 +13,10 @@ EDC Connectors.
 ├── src/main/java/eu/merloteducation/modelslib
 │   ├── api                   # model classes of the REST APIs
 │   │   ├── contract          # contract orchestrator REST DTOs
+│   │   ├── did               # did service REST DTOs
 │   │   ├── organization      # organisation orchestrator REST DTOs
 │   │   ├── serviceoffering   # serviceoffering orchestrator REST DTOs
+│   ├── daps                  # model classes for DAPS certificate requests
 │   ├── edc                   # model classes for EDC interaction
 │   ├── queue                 # DTOs for interacting with the message queue
 ```
