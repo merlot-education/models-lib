@@ -16,8 +16,6 @@
 
 package eu.merloteducation.modelslib.edc.asset;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import eu.merloteducation.modelslib.edc.EdcConstants;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

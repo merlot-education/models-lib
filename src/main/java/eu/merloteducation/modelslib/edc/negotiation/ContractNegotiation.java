@@ -17,7 +17,6 @@
 package eu.merloteducation.modelslib.edc.negotiation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import eu.merloteducation.modelslib.edc.EdcConstants;
 import lombok.Getter;
 import lombok.Setter;
 

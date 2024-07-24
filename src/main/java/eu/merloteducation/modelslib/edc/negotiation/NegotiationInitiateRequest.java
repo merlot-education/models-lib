@@ -40,7 +40,7 @@ public class NegotiationInitiateRequest {
     private String consumerId;
     private String providerId;
     private String counterPartyAddress;
-    private ContractOffer offer; // TODO deprecated for policy?
+    private ContractOffer offer; // deprecated for policy?
 
     @JsonProperty("@context")
     public Map<String, String> getContext() {
